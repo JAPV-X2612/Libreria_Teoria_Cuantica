@@ -7,7 +7,6 @@
 # Libreria de Teoría Cuántica
 
 from numpy import *
-from copy import *
 from math import *
 
 def Normal_Vect(v):
@@ -20,7 +19,7 @@ def Normal_Vect(v):
 
 def Prob_Sist_Linea(ψ,xi):
     """Calcula y devuelve la probabilidad de que una partícula esté en el punto xi de un vector de estados ψ
-    (1D array, ) -> 1D array"""
+    (1D array, ) -> float"""
     ψ = array(ψ)
     prob = (linalg.norm(ψ[xi]))**2/(linalg.norm(ψ))**2
     return prob
@@ -28,9 +27,13 @@ def Prob_Sist_Linea(ψ,xi):
 
 def Prob_Trans_Est(ψ,φ):
     """Calcula y devuelve la probabilidad de transitar de un vector de estados ψ a otro vector de estdos φ
-    (1D array) -> 1D array"""
+    (1D array, 1D array) -> float"""
     ψ,φ = array(ψ),array(φ)
     ψ,φ = Normal_Vect(ψ),Normal_Vect(φ)
     braφ = transpose(conjugate(φ))
-    pte = dot(braφ,ψ)
+    at = dot(braφ,ψ)
+    pte = linalg.norm(at)**2
     return pte
+
+
+# Anotar en el prtafolio las ecuaciones para calcular amplitud de transición y las probabilidades de transición

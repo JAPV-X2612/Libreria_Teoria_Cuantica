@@ -63,12 +63,14 @@ A continuación se muestra un ejemplo de ejecución de cada función en [IDLE](h
 
 #### 1. Cálculo de la probabilidad de hallar una partícula en un punto de un vector de estados
 ```
->>>
+>>> Prob_Sist_Linea([-1j, 2.5-3j, 6+2j, 5-9j, -1+2j], 3)
+     0.633781763826607
 ```
 
 #### 2. Calculo de la probabilidad de transitar de un vector de estados ψ a otro vector de estdos φ
 ```
->>>
+>>> Prob_Trans_Est([sqrt(2)/2j, -sqrt(2)/2], [sqrt(2)/2, sqrt(2)/2j])
+     1.0000000000000004
 ``` 
 
 ## Textos y Wikis 📖
