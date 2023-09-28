@@ -8,8 +8,8 @@ Este es un proyecto que contiene funciones para simular experimentos de teoría 
 ---
 Funciones incluidas en la librería:
 
-1. Cálculo de la probabilidad de hallar una partícula en un punto de un vector de estados
-2. Calculo de la probabilidad de transitar de un vector de estados ψ a otro vector de estdos φ
+1. Cálculo de la probabilidad de hallar una partícula en un punto de un vector de estados |ψ⟩
+2. Calculo de la probabilidad de transitar de un vector de estados |ψ⟩ a otro vector de estados |φ⟩
 
 ## Requisitos 🧾
 ---
@@ -61,13 +61,13 @@ Una vez descargada una copia del repositorio en su máquina local, se recomienda
 ---
 A continuación se muestra un ejemplo de ejecución de cada función en [IDLE](https://docs.python.org/es/3/library/idle.html):
 
-#### 1. Cálculo de la probabilidad de hallar una partícula en un punto de un vector de estados
+#### 1. Cálculo de la probabilidad de hallar una partícula en un punto de un vector de estados |ψ⟩
 ```
 >>> Prob_Sist_Linea([-1j, 2.5-3j, 6+2j, 5-9j, -1+2j], 3)
      0.633781763826607
 ```
 
-#### 2. Calculo de la probabilidad de transitar de un vector de estados ψ a otro vector de estdos φ
+#### 2. Calculo de la probabilidad de transitar de un vector de estados |ψ⟩ a otro vector de estados |φ⟩
 ```
 >>> Prob_Trans_Est([sqrt(2)/2j, -sqrt(2)/2], [sqrt(2)/2, sqrt(2)/2j])
      1.0000000000000004

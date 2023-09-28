@@ -12,7 +12,7 @@ import unittest as ut
 class Test_Libreria_Nombre(ut.TestCase):
     
     def test_Prob_Sist_Linea(self):
-        """Prueba del calculo de la probabilidad de que una partícula esté en el punto xi de un vector de estados ψ
+        """Prueba del calculo de la probabilidad de que una partícula esté en el punto xi de un vector de estados |ψ⟩
         None -> OK or FAILED (failures=#)"""
         prob = Prob_Sist_Linea([2-3j, 1+2j], 1)        
         self.assertAlmostEqual(prob, 0.277777777)
@@ -23,7 +23,7 @@ class Test_Libreria_Nombre(ut.TestCase):
         
 
     def test_Prob_Trans_Est(self):
-        """Prueba del calculo de la probabilidad de transitar de un vector de estados ψ a otro vector de estdos φ
+        """Prueba del calculo de la probabilidad de transitar de un vector de estados |ψ⟩ a otro vector de estdos |φ⟩
         None -> OK or FAILED (failures=#)"""
         pte = Prob_Trans_Est([sqrt(2)/2j, -sqrt(2)/2], [sqrt(2)/2, sqrt(2)/2j])        
         self.assertAlmostEqual(pte, 1)
