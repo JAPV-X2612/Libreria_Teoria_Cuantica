@@ -28,8 +28,8 @@ class Test_Libreria_Nombre(ut.TestCase):
         pte = Prob_Trans_Est([sqrt(2)/2j, -sqrt(2)/2], [sqrt(2)/2, sqrt(2)/2j])        
         self.assertAlmostEqual(pte, 1)
         pte = Prob_Trans_Est([-1j, -5-3j, 6+2j, 5-7j], [2+2j, 3-1j, -1-1j, 4+3j])
-        self.assertAlmostEqual(pte, 0.530052299)
-        pte = Prob_Trans_Est([1, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0, 0])
+        self.assertAlmostEqual(pte, 0.530052199)
+        pte = Prob_Trans_Est([1,0,0,0,0,0,0,0,0,0], [0,1,0,0,0,0,0,0,0,0])
         self.assertAlmostEqual(pte, 0)
 
 
