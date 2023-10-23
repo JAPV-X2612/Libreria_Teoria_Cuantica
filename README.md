@@ -2,14 +2,18 @@
 
 ## Descripción 📑
 ---
-Este es un proyecto que contiene funciones para simular experimentos de teoría cuántica sobre las probabilidades de hallar partículas en determinados puntos del espacio.
+Este es un proyecto que contiene funciones para simular experimentos de teoría cuántica.
 
 ## Tabla de Contenidos 🗂️
 ---
 Funciones incluidas en la librería:
 
-1. Cálculo de la probabilidad de hallar una partícula en un punto de un vector de estados |ψ⟩
-2. Calculo de la probabilidad de transitar de un vector de estados |ψ⟩ a otro vector de estados |φ⟩
+1. Cálculo de la probabilidad de hallar una partícula en un punto de un vector de estados
+2. Cálculo de la probabilidad de transitar de un vector de estados a otro
+3. Cálculo de la amplitud de transición de un vector de estados a otro
+4. Cálculo del valor esperado y la varianza de un experimento cuántico
+5. Cálculo de la probabilidad de que un sistema cuántico colapse de un vector de estados a cada vector posible después de una medición
+6. Cálculo de la dinámica de un sistema cuántico
 
 ## Requisitos 🧾
 ---
@@ -39,7 +43,7 @@ Para usar esta proyecto se recomienda seguir los siguientes pasos:
      ```sh
      $ git clone https://github.com/JAPV-X2612/Libreria_Teoria_Cuantica.git
      ```
-4. Verificar que se hallan descargado 5 archivos
+4. Verificar que se hallan descargado 6 archivos
 5. Salir de la terminal de Git:
      ```sh
      $ git exit
@@ -61,16 +65,40 @@ Una vez descargada una copia del repositorio en su máquina local, se recomienda
 ---
 A continuación se muestra un ejemplo de ejecución de cada función en [IDLE](https://docs.python.org/es/3/library/idle.html):
 
-#### 1. Cálculo de la probabilidad de hallar una partícula en un punto de un vector de estados |ψ⟩
+#### 1. Cálculo de la probabilidad de hallar una partícula en un punto de un vector de estados
 ```
 >>> Prob_Sist_Linea([-1j, 2.5-3j, 6+2j, 5-9j, -1+2j], 3)
      0.633781763826607
-```
+``` 
 
-#### 2. Calculo de la probabilidad de transitar de un vector de estados |ψ⟩ a otro vector de estados |φ⟩
+#### 2. Cálculo de la probabilidad de transitar de un vector de estados a otro
 ```
->>> Prob_Trans_Est([sqrt(2)/2j, -sqrt(2)/2], [sqrt(2)/2, sqrt(2)/2j])
-     1.0000000000000004
+>>> Prob_Trans_Est([sqrt(2)*1j/2, -sqrt(2)/2], [sqrt(2)/2, sqrt(2)*1j/2])
+     1
+``` 
+
+#### 3. Cálculo de la amplitud de transición de un vector de estados a otro
+```
+>>> Ampli_Trans([1,-1j],[1j,1])
+     -1j
+``` 
+
+#### 4. Cálculo del valor esperado y la varianza de un experimento cuántico
+```
+>>> Val_Var([[1,1j,-2j],[-1j,2,1+1j],[2j,1-1j,3]],[2j,-3,1j])
+     ((1.3571428571428572-0j), (6.4438775510204085+0j))
+``` 
+
+#### 5. Cálculo de la probabilidad de que un sistema cuántico colapse de un vector de estados a cada vector posible después de una medición
+```
+>>> Colap_Sist([[-1,-1j],[1j,1]],[1/2,1/2])
+     [0.5, 0.5]
+``` 
+
+#### 6. Cálculo de la dinámica de un sistema cuántico
+```
+>>> Dina_Sist([[[1,0],[0,-1]],[[0,1j],[-1j,0]],[[0,-1j],[1j,0]]],[1,1])
+     array([-1.+0.j  1.+0.j])
 ``` 
 
 ## Textos y Wikis 📖

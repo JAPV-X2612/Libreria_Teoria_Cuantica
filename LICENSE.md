@@ -1,6 +1,8 @@
-## AM-331-A3 Licencia de Software 
-**Effective:** April 2018
+## Licencia de Software 
+**Effective:** April 2018  
 Copyright © 2023
+
+**AUTOR:** Jesús A. Pinzón Vega
 
 El Software, con excepción de los documentos de soporte y uso, deberá estar sujeto a los siguientes términos y condiciones, los cuales se empaquetarán como parte de cada Software bajo un archivo que llevará el nombre de "LICENCIA":   
 
